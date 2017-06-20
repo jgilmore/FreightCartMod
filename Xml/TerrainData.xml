@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTerrainDataEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<TerrainDataEntry>
+		<Key>steveman0.FreightCartStation</Key>
+		<Name>Freight Cart Station</Name>
+		<IconName>steveman0.Freight_Station</IconName>
+		<Description>Supplies freight network with designated resources from mass storage</Description>
+		<LayerType>PrimaryTerrain</LayerType>
+		<TopTexture>192</TopTexture>
+		<SideTexture>192</SideTexture>
+		<BottomTexture>192</BottomTexture>
+		<GUITexture>192</GUITexture>
+		<isSolid>false</isSolid>
+		<isTransparent>true</isTransparent>
+		<isHollow>false</isHollow>
+		<isGlass>false</isGlass>
+		<isPassable>false</isPassable>
+		<hasObject>true</hasObject>
+		<hasEntity>true</hasEntity>
+		<Category>Minecarts</Category>
+		<AudioWalkType>Sand</AudioWalkType>
+		<AudioBuildType>Dirt</AudioBuildType>
+		<AudioDestroyType>None</AudioDestroyType>
+		<tags>
+			<tag>Machinery</tag>
+		</tags>
+	</TerrainDataEntry>	
+	
+	<TerrainDataEntry>
+		<Key>steveman0.FreightSystemMonitor</Key>
+		<Name>Freight System Monitor</Name>
+		<IconName>Auto Excavator</IconName>
+		<Description>Panel for accessing an array of information about your freight network</Description>
+		<LayerType>PrimaryTerrain</LayerType>
+		<TopTexture>192</TopTexture>
+		<SideTexture>192</SideTexture>
+		<BottomTexture>192</BottomTexture>
+		<GUITexture>192</GUITexture>
+		<isSolid>false</isSolid>
+		<isTransparent>false</isTransparent>
+		<isHollow>false</isHollow>
+		<isGlass>false</isGlass>
+		<isPassable>false</isPassable>
+		<hasObject>true</hasObject>
+		<hasEntity>true</hasEntity>
+		<Category>Machine</Category>
+		<AudioWalkType>Metal</AudioWalkType>
+		<AudioBuildType>Dirt</AudioBuildType>
+		<AudioDestroyType>None</AudioDestroyType>
+		<tags>
+			<tag>Machinery</tag>
+		</tags>
+	</TerrainDataEntry>
+	
+	<TerrainDataEntry>
+		<Key>steveman0.FreightCartFactory</Key>
+		<Name>Freight Cart Depot</Name>
+		<IconName>steveman0.Freight_Depot</IconName>
+		<Description>Places a Freight Cart from an attached Storage Hopper </Description>
+		<LayerType>PrimaryTerrain</LayerType>
+		<TopTexture>192</TopTexture>
+		<SideTexture>192</SideTexture>
+		<BottomTexture>192</BottomTexture>
+		<GUITexture>192</GUITexture>
+		<isSolid>false</isSolid>
+		<isTransparent>true</isTransparent>
+		<isHollow>false</isHollow>
+		<isGlass>false</isGlass>
+		<isPassable>false</isPassable>
+		<hasObject>true</hasObject>
+		<hasEntity>true</hasEntity>
+		<Category>Minecarts</Category>
+		<AudioWalkType>Sand</AudioWalkType>
+		<AudioBuildType>Dirt</AudioBuildType>
+		<AudioDestroyType>None</AudioDestroyType>
+		<tags>
+			<tag>Machinery</tag>
+		</tags>
+	</TerrainDataEntry>
+	
+	<TerrainDataEntry>
+		<Key>steveman0.TourCartStation</Key>
+		<Name>Tour Cart Station</Name>
+		<IconName>Minecart Depot</IconName>
+		<Description>Station for deploying tour carts on the freight track network</Description>
+		<LayerType>PrimaryTerrain</LayerType>
+		<TopTexture>192</TopTexture>
+		<SideTexture>192</SideTexture>
+		<BottomTexture>192</BottomTexture>
+		<GUITexture>192</GUITexture>
+		<isSolid>false</isSolid>
+		<isTransparent>true</isTransparent>
+		<isHollow>false</isHollow>
+		<isGlass>false</isGlass>
+		<isPassable>false</isPassable>
+		<hasObject>true</hasObject>
+		<hasEntity>true</hasEntity>
+		<Category>Minecarts</Category>
+		<AudioWalkType>Sand</AudioWalkType>
+		<AudioBuildType>Dirt</AudioBuildType>
+		<AudioDestroyType>None</AudioDestroyType>
+		<tags>
+			<tag>Machinery</tag>
+		</tags>
+	</TerrainDataEntry>
+	
+	<TerrainDataEntry>
+		<Key>steveman0.TrackJunction</Key>
+		<Name>Track Junction</Name>
+		<Values>
+			<ValueEntry>
+			<Key>steveman0.TrackJunctionStandard</Key>
+			<Name>Track Junction</Name>
+			<IconName>steveman0.TrackJunction</IconName>
+			<Description>Allows Freight Carts to travel multiple directions</Description>
+			</ValueEntry>
+			<ValueEntry>
+			<Key>steveman0.ScrapTrackJunction</Key>
+			<Name>Scrap Track Junction</Name>
+			<IconName>steveman0.TrackJunction</IconName>
+			<Description>Allows Freight Carts to travel multiple directions at low speeds</Description>
+			</ValueEntry>
+		</Values>
+		<IconName>steveman0.TrackJunction</IconName>
+		<Description>Allows Minecarts to travel multiple directions.</Description>
+		<LayerType>PrimaryTerrain</LayerType>
+		<TopTexture>192</TopTexture>
+		<SideTexture>192</SideTexture>
+		<BottomTexture>192</BottomTexture>
+		<GUITexture>192</GUITexture>
+		<isSolid>false</isSolid>
+		<isTransparent>true</isTransparent>
+		<isHollow>false</isHollow>
+		<isGlass>false</isGlass>
+		<isPassable>false</isPassable>
+		<hasObject>true</hasObject>
+		<hasEntity>true</hasEntity>
+		<Category>Minecarts</Category>
+		<AudioWalkType>Sand</AudioWalkType>
+		<AudioBuildType>Dirt</AudioBuildType>
+		<AudioDestroyType>None</AudioDestroyType>
+		<tags>
+			<tag>Machinery</tag>
+		</tags>
+	</TerrainDataEntry>
+	
+	<TerrainDataEntry>
+		<Key>steveman0.ScrapTrack</Key>
+		<Name>Track Junction</Name>
+		<Values>
+			<ValueEntry>
+				<Key>steveman0.ScrapTrackStraight</Key>
+				<Name>Scrap Track Straight</Name>
+				<IconName>Track Straight</IconName>
+				<Description>Allows freight carts to travel in a straight line at low speeds.</Description>
+			</ValueEntry>
+			<ValueEntry>
+				<Key>steveman0.ScrapTrackCorner</Key>
+				<Name>Scrap Track Corner</Name>
+				<IconName>Track Corner</IconName>
+				<Description>Allows freight carts to travel around corners at low speeds.</Description>
+			</ValueEntry>
+			<ValueEntry>
+				<Key>steveman0.ScrapTrackSlope</Key>
+				<Name>Scrap Track Slope</Name>
+				<IconName>Track Slope</IconName>
+				<Description>Allows freight carts to travel around up slopes at low speeds.</Description>
+			</ValueEntry>
+		</Values>
+		<LayerType>PrimaryTerrain</LayerType>
+		<TopTexture>192</TopTexture>
+		<SideTexture>192</SideTexture>
+		<BottomTexture>192</BottomTexture>
+		<GUITexture>192</GUITexture>
+		<isSolid>false</isSolid>
+		<isTransparent>true</isTransparent>
+		<isHollow>false</isHollow>
+		<isGlass>false</isGlass>
+		<isPassable>false</isPassable>
+		<hasObject>true</hasObject> <!-- Rendered separately -->
+		<hasEntity>true</hasEntity>
+		<Category>Minecarts</Category>
+		<AudioWalkType>Sand</AudioWalkType>
+		<AudioBuildType>Dirt</AudioBuildType>
+		<AudioDestroyType>None</AudioDestroyType>
+		<tags>
+			<tag>Machinery</tag>
+		</tags>
+	</TerrainDataEntry>
+
+</ArrayOfTerrainDataEntry>

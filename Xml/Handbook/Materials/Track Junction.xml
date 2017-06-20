@@ -1,0 +1,46 @@
+<MaterialEntry>
+	<Name>Track Junction</Name>
+	<Pages>
+		<Page>
+			<Paragraphs>
+				<Title>
+					<Text>Track Junction</Text>
+				</Title>
+				<Icon>
+					<Name>Track Straight</Name>
+					<Alignment>Center</Alignment>
+				</Icon>
+				<Paragraph>
+					<Text>The Track Junction is the key to creating an intelligent distribution network of freight cart stations across your entire fortress.  Junctions link to each other to form a track network that freight carts can navigate to freight station destinations.</Text>
+				</Paragraph>
+				<Spacer/>
+				<Paragraph>
+				<Text>The Track Junction is a part of the Freight Carts Mod by steveman0.
+				</Text>
+				</Paragraph>
+				<Link>
+					<Target>
+						<URL>http://steamcommunity.com/sharedfiles/filedetails/?id=728489255</URL>
+					</Target>
+					<Text>See the Mod's Workshop page on Steam if you have questions, comments, or bugs to report!</Text>
+				</Link>
+			</Paragraphs>
+		</Page>			
+		<Page>
+			<Paragraphs>
+				<Title>
+				<Text>Track Networks</Text>
+				</Title>
+				<Paragraph>
+				<Text>The track junction's color will change to reflect the number of registered connections.  Red indicates no connections have been registered, orange indicates 1, yellow 2, green 3, and blue indicates all 4 routes are connected.
+					
+				It is perfectly valid for a junction path to lead back to itself.  A connection can lead to a station, turn the cart around with a buffer, and return to the original junction and register as a valid connection.  Closed loops that do not end at a junction however are forbidden.
+				
+				Currently, connections are only recognized as broken when a junction is removed.  If a track connected to a junction is modified or removed the junction will need to be replaced to refresh the connections.  If a connection is broken without replacing the junction carts will continue to attempt to travel the broken route!
+				
+				For the safety of less than brilliant carts, please ensure all connections of a junction are connected or otherwise closed off with a buffer.</Text>
+				</Paragraph>
+			</Paragraphs>
+		</Page>		
+	</Pages>
+</MaterialEntry>

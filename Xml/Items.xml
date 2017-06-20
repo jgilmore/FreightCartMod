@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfItemEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<ItemEntry>
+		<Key>steveman0.ScrapCartMK1</Key>
+		<Name>Scrap Freight cart</Name>
+		<Plural>Scrap Freight carts</Plural>
+		<Type>ItemSingle</Type>	
+		<Hidden>false</Hidden>
+		<Object>Minecart_T1_Object</Object><!-- This may need to be a specific one -->
+		<Sprite>Minecart</Sprite>
+		<Category>Minecarts</Category><!-- What -->
+		<ResearchRequirements>
+			<Research>steveman0.FreightCarts</Research>
+		<!--	<Research>t4_start</Research> -->
+		</ResearchRequirements>		
+	</ItemEntry>
+
+	<ItemEntry>
+		<Key>steveman0.FreightCartMK1</Key>
+		<Name>Freight Minecart</Name>
+		<Plural>Freight Minecarts</Plural>
+		<Type>ItemSingle</Type>	
+		<Hidden>false</Hidden>
+		<Object>Minecart_T4_Object</Object><!-- This may need to be a specific one -->
+		<Sprite>Minecart_T4</Sprite>
+		<Category>Minecarts</Category><!-- What -->
+		<ResearchRequirements>
+			<Research>minecarts1</Research>
+		<!--	<Research>t4_start</Research> -->
+		</ResearchRequirements>		
+	</ItemEntry>
+	
+	<ItemEntry>
+		<Key>steveman0.FreightTourBasic</Key>
+		<Name>Basic Tourcart</Name>
+		<Plural>Basic Tourcarts</Plural>
+		<Type>ItemSingle</Type>	
+		<Hidden>false</Hidden>
+		<Object>Minecart_T10_Object</Object><!-- This may need to be a specific one -->
+		<Sprite>Minecart_T10</Sprite>
+		<Category>Minecarts</Category><!-- What -->
+		<ResearchRequirements>
+			<Research>minecarts3</Research>
+		<!--	<Research>t4_start</Research> -->
+		</ResearchRequirements>		
+	</ItemEntry>
+	
+	<ItemEntry>
+		<Key>steveman0.ScrapOreFreighterMK1</Key>
+		<Name>Scrap Ore Freighter</Name>
+		<Plural>Scrap Ore Freighters</Plural>
+		<Type>ItemSingle</Type>	
+		<Hidden>false</Hidden>
+		<Object>Minecart_T1_Object</Object><!-- This may need to be a specific one -->
+		<Sprite>steveman0.OreFreighterT1</Sprite>
+		<Category>Minecarts</Category><!-- What -->
+		<ResearchRequirements>
+			<Research>steveman0.FreightCarts</Research>
+		<!--	<Research>t4_start</Research> -->
+		</ResearchRequirements>		
+		<ScanRequirements>
+			<Scan>IronOre</Scan>
+		</ScanRequirements>	
+	</ItemEntry>
+	
+	<ItemEntry>
+		<Key>steveman0.OreFreighterT1</Key>
+		<Name>Basic Ore Freighter</Name>
+		<Plural>Basic Ore Freighters</Plural>
+		<Type>ItemSingle</Type>	
+		<Hidden>false</Hidden>
+		<Object>Minecart_T1_Object</Object><!-- This may need to be a specific one -->
+		<Sprite>steveman0.OreFreighterT1</Sprite>
+		<Category>Minecarts</Category><!-- What -->
+		<ResearchRequirements>
+			<Research>minecarts1</Research>
+		<!--	<Research>t4_start</Research> -->
+		</ResearchRequirements>		
+	</ItemEntry>
+	
+	<ItemEntry>
+		<Key>steveman0.OreFreighterT2</Key>
+		<Name>Fast Ore Freighter</Name>
+		<Plural>Fast Ore Freighters</Plural>
+		<Type>ItemSingle</Type>	
+		<Hidden>false</Hidden>
+		<Object>Minecart_T2_Object</Object><!-- This may need to be a specific one -->
+		<Sprite>steveman0.OreFreighterT2</Sprite>
+		<Category>Minecarts</Category><!-- What -->
+		<ResearchRequirements>
+			<Research>minecarts2</Research>
+		<!--	<Research>t4_start</Research> -->
+		</ResearchRequirements>		
+	</ItemEntry>
+	
+	<ItemEntry>
+		<Key>steveman0.OreFreighterT3</Key>
+		<Name>Large Ore Freighter</Name>
+		<Plural>Large Ore Freighters</Plural>
+		<Type>ItemSingle</Type>	
+		<Hidden>false</Hidden>
+		<Object>Minecart_T3_Object</Object><!-- This may need to be a specific one -->
+		<Sprite>steveman0.OreFreighterT3</Sprite>
+		<Category>Minecarts</Category><!-- What -->
+		<ResearchRequirements>
+			<Research>minecarts2</Research>
+		<!--	<Research>t4_start</Research> -->
+		</ResearchRequirements>		
+	</ItemEntry>
+	
+	<ItemEntry>
+		<Key>steveman0.OreFreighterT4</Key>
+		<Name>Bulk Ore Freighter</Name>
+		<Plural>Bulk Ore Freighters</Plural>
+		<Type>ItemSingle</Type>	
+		<Hidden>false</Hidden>
+		<Object>Minecart_T4_Object</Object><!-- This may need to be a specific one -->
+		<Sprite>steveman0.OreFreighterT4</Sprite>
+		<Category>Minecarts</Category><!-- What -->
+		<ResearchRequirements>
+			<Research>minecarts2</Research>
+			<Research>t4_start</Research>
+		</ResearchRequirements>		
+	</ItemEntry>
+	
+</ArrayOfItemEntry>

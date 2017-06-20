@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Collections.Generic;
 using System.IO;
 using System;
@@ -12,7 +12,7 @@ public class FreightCartMob : MobEntity
     public float mrSpeed = 1f;
     //public List<CubeCoord> mVisitedLocations = new List<CubeCoord>();
     private float mrTargetSpeed;
-    public int mnUsedStorage;
+    public int mnUsedStorage; //consider eliminating, use self.TransferInventory.HasSpareCapacity() and the like instead.
     //private ItemBase[] maStoredItems;
     public FreightCartMob.eMinecartType meType;
     private float mrLoadTimer;
@@ -61,7 +61,7 @@ public class FreightCartMob : MobEntity
     private bool TransitCheckIn = true;
     public bool OffloadingExcess = true;
     private List<ItemBase> CheckInList = new List<ItemBase>();
-    public ItemBase OreFreighterItem;
+    public ItemBase OreFreighterItem; 
 
     public FreightTrackJunction LastJunction;
     public FreightTrackJunction NextJunction;

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using FortressCraft.Community.Utilities;
 using System.Text;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfResearchDataEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<ResearchDataEntry>
+		<Key>steveman0.FreightCarts</Key>
+		<Name>Freight Carts</Name>
+		<IconName>Minecart</IconName>
+		<ResearchCost>3</ResearchCost>
+		<PreDescription>We'll need a way to get resources to the machines that need them.  With a simplistic AI it would be possible to construct a simple cart system to move goods to where they are needed.</PreDescription>
+		<PostDescription>At the moment we only have scrap material and soft metals to work with so we can't move very much at a time nor very quickly but at least we won't need to do the heavy lifting by hand.</PostDescription>
+	</ResearchDataEntry>
+</ArrayOfResearchDataEntry>

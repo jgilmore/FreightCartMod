@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using UnityEngine;
 using FortressCraft.Community.Utilities;
 using System.IO;

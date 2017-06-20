@@ -1,0 +1,117 @@
+<MaterialEntry>
+	<Name>Freight Cart Station</Name>
+	<Pages>
+		<Page>
+			<Paragraphs>
+				<Title>
+					<Text>Freight Cart Station</Text>
+				</Title>
+				<Icon>
+					<Name>Minecart Load</Name>
+					<Alignment>Center</Alignment>
+				</Icon>
+				<Paragraph>
+					<Text>Freight carts and stations provide for intelligent resource distribution within your fortress.</Text>
+				</Paragraph>
+				<Paragraph>
+				<Text>Freight cart stations can interface directly with mass storage in addition to hoppers.  Carts that come to the station will collect resources from storage to transport to other destinations.  However, carts will only gather resources that are requested by other stations on the network.  Designated resources must be configured at each mass storage system.
+				
+				Freight carts will only collect resources from a freight cart station if the resources are required by another station on the network.  The requirements of a station are dictated by the stocking limits of the registered freight.  See the following pages for defining the network and configuring the registered freight for a mass storage system.
+				
+				Hold CTRL, SHIFT, or ALT when adjusting the stock limits to change their values by 1, 10, or 1000 per click, respectively.  Right clicking an empty registry enables registering an item by name.</Text>
+				</Paragraph>
+			</Paragraphs>
+		</Page>
+		<Page>
+			<Paragraphs>
+				<Title>
+				<Text>Freight Networks</Text>
+				</Title>
+				<Paragraph>
+				<Text>Freight Cart Stations are divided up by their Freight Networks.  The network is a name that indicates what other stations can connect to this one for supplying and receiving freight.  It is your responsibility to ensure the carts can actually get to each station on the network!  Failure to do so may result in carts stuck with undeliverable goods.
+				
+				On opening the station panel (E) for the first time you will be asked to assign the Freight Cart Station to a network.  You can reassign a station to a new network at any time, however carts' goods previously collected from the station will be reserved for the previous network until delivered.
+				
+				It is left up to you to decide how to best organize your networks whether it be by the type of goods distributed, locations served, or another scheme.  Experiment to find what works best for you!
+				
+				HINT! Choose a descriptive network name so you remember the purpose of the network or what goods it distributes.  For example, "T2 Bars", "Research Pods", or "Fuel".</Text>
+				</Paragraph>
+			</Paragraphs>
+		</Page>
+		<Page>
+			<Paragraphs>
+				<Title>
+				<Text>Configuration</Text>
+				</Title>
+				<Paragraph>
+				<Text>Pressing (E) to interact with the Freight Cart Station will open the registered freight for the attached mass storage system once a network has been assigned.
+				
+				Registering an item as designated freight for a mass storage system consists of three parts.  The first is the item itself which can be dragged from an inventory slot to the empty slot at the end of the list or by right clicking the slot to search for it by name.  The second and third parts are to define the request and offer setpoints.
+				
+				The Request setpoint is the threshold below which the mass storage system will request items for delivery to it.  If this is zero the system will never request items instead relying on you to provide it by other means.
+				
+				The Offer setpoint is the threshold above which the mass storage system will offer the items to freight carts for delivery to other mass storage systems that request the item.  If this setpoint is zero than the items will always be offered up for transport.
+				
+				Adjusting these two limits enables maintaining a safety stock if desired or restricting the storage as receiver or supplier only. (HINT: Setting the offers setpoint above the mass storage capacity will prevent supplying the item as freight.)</Text>
+				</Paragraph>
+			</Paragraphs>
+		</Page>
+		<Page>
+			<Paragraphs>
+				<Title>
+				<Text>Track Networks</Text>
+				</Title>
+				<Paragraph>
+				<Text>Since the addition of Track Junctions enabled complex track networks, the freight cart station has the added ability to specify cart assignments.  By design, assigning carts to stations is not intended to be necessary.  Carts will do their best to find stations that have goods to offer and collect them for transport.
+				
+				For more precise control over carts' distribution you may designate a number of carts to be assigned to a freight cart station.  A cart that does not have an assignment will take up one if available when it arrives empty at a junction.  Once assigned, freight carts prioritize their designated station for pickup.  
+				
+				Note that carts only travel to their assigned station for pickup when empty.  A cart assigned to a receive-only station will seek out stations offering goods that can satisfy the station's requests.
+				
+				Make sure each mass storage has plenty of room to hold the request amounts plus a bit to spare for excess that gets returned to the station.  A stations name will appear in red in the system monditor if a cart was unable to deposit at the station in the last minute.</Text>
+				</Paragraph>
+			</Paragraphs>
+		</Page>
+		<Page>
+			<Paragraphs>
+				<Title>
+				<Text>Network Design</Text>
+				</Title>
+				<Paragraph>
+				<Text>Keep in mind that carts only have basic navigation skills.  They won't discriminate stations along their path and will stop at each of them in an effort to maximize the goods they transport.  Junctions provide the ability to branch off paths for carts so that they don't need to stop at every station - only the one they need to.
+				
+				A station can support up to 300 items per minute of throughput.  Even a large mass storage only needs a few stations to service all of the carts.  Remember also that all stations with the same network ID on a mass storage will share freight goods so there is no need to duplicate entries.  
+				
+				If you need stations on a storage to have different freight goods use a different network ID.  When doing so it would be best to have these stations on a different track junction branch to balance service to each station and keep carts running at max efficiency.
+				
+				Use junctions to isolate stations.  Carts navigate by way of junctions.  Minimizing the stations that the carts encounter on route will keep them moving quickly and keep the cart focused on the intended goods for transit.</Text>
+				</Paragraph>
+			</Paragraphs>
+		</Page>
+		<Page>
+			<Paragraphs>
+				<Title>
+				<Text>Tips!</Text>
+				</Title>
+				<Paragraph>
+				<Text>Tired of having to input the same freight registry into multiple stations?  Press Ctrl+Q to copy the registry of a Freight Cart Station.  You can then use Ctrl+T on a different station to paste in the same freight items and stocking limits with the new station's crate and network.
+				
+				When using the Right Click search function type in "component", "placement", or "multi" (Without quotes) to get a list of the multi-block components. 
+				
+				Minecart Full and Empty Gates function a little differently with freight carts.  They continue to block carts that don't meet the required conditions however an exception is made.  If the cart stopped at a station and loaded or unloaded as much as the station had to offer/accept the cart will ignore the gate even if it's partially filled.  This allows holding carts that missed an occupied station while still allowing multiple stops on a route with different freight needs.</Text>
+				</Paragraph>
+				<Spacer/>
+				<Paragraph>
+				<Text>The Freight Cart Station is a part of the Freight Carts Mod by steveman0.
+				</Text>
+				</Paragraph>
+				<Link>
+					<Target>
+						<URL>http://steamcommunity.com/sharedfiles/filedetails/?id=728489255</URL>
+					</Target>
+					<Text>See the Mod's Workshop page on Steam if you have questions, comments, or bugs to report!</Text>
+				</Link>
+			</Paragraphs>
+		</Page>
+	</Pages>
+</MaterialEntry>

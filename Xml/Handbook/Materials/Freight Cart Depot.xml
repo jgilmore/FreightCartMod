@@ -1,0 +1,118 @@
+<MaterialEntry>
+	<Name>Freight Cart Depot</Name>
+	<Pages>
+		<Page>
+			<Paragraphs>
+				<Title>
+					<Text>Freight Cart Depot</Text>
+				</Title>
+				<Icon>
+					<Name>Minecart Depot</Name>
+					<Alignment>Center</Alignment>
+				</Icon>
+				<Paragraph>
+					<Text>Freight Cart Depots are the method used to place Freight Carts into your freight network. Simply place a Storage Hopper adjacent to the Depot, and ensure the Depot is touching any piece of track. Each Depot is limited to a single Freight Cart placement per 30 seconds, to give time for the internals to cool down.</Text>
+				</Paragraph>
+				<Spacer/>
+				<Spacer/>
+				<Paragraph>
+					<Text>Freight Carts can be deployed as any of the standard Minecart types and have equivalent stats.</Text>>
+				</Paragraph>
+				<Spacer/>
+				<Link>
+					<Target>
+						<Material>Basic Minecart</Material>
+					</Target>
+					<Text>Basic Minecart</Text>
+				</Link>
+				<Link>
+					<Target>
+						<Material>Fast Minecart</Material>
+					</Target>
+					<Text>Fast Minecart</Text>
+				</Link>
+				<Link>
+					<Target>
+						<Material>Large Minecart</Material>
+					</Target>
+					<Text>Large Minecart</Text>
+				</Link>
+					<Link>
+					<Target>
+						<Material>Bulk Minecart</Material>
+					</Target>
+					<Text>Bulk Minecart</Text>
+				</Link>
+			</Paragraphs>
+		</Page>				
+		<Page>
+			<Paragraphs>
+				<Title>
+					<Text>Freight Cart Resource Handling</Text>
+				</Title>
+				<Spacer/>
+				<Paragraph>
+					<Text>Once in your freight network, Freight Carts will stop at Freight Cart Stations, and collect and drop off their carried resources.</Text>
+				</Paragraph>
+				<Spacer/>
+				<Icon>
+					<Name>Minecart Load</Name>
+					<Target><Material>Freight Cart Station</Material></Target>
+				</Icon>
+				<Link>
+					<Target>
+						<Material>Freight Cart Station</Material>
+					</Target>
+					<Text>Freight Cart Station</Text>
+				</Link>
+			</Paragraphs>
+		</Page>
+			<Page>
+			<Paragraphs>
+				<Title>
+					<Text>Advanced Minecart Controls</Text>
+				</Title>
+				<Spacer/>
+				<Paragraph>
+					<Text>For finer control over your Minecart's movement and ore-carrying, you have a number of tools available for changing behaviour and decision making.</Text>
+				</Paragraph>
+				<Icon>
+					<Name>Minecart Turbo Rail</Name>
+					<Target><Material>Minecart Turbo Rail</Material></Target>
+				</Icon>
+				<Link>
+					<Target>
+						<Material>Minecart Turbo Rail</Material>
+					</Target>
+					<Text>Minecart Turbo Rail</Text>
+				</Link>
+				<Spacer/>
+				<Icon>
+					<Name>MinecartBufferFull</Name>
+					<Target><Material>MinecartBufferFull</Material></Target>
+				</Icon>
+				<Link>
+					<Target>
+						<Material>Minecart Full Gate</Material>
+					</Target>
+					<Text>Minecart Full Gate</Text>
+				</Link>
+				<Spacer/>
+				<Icon>
+					<Name>MinecartBufferEmpty</Name>
+					<Target><Material>MinecartBufferEmpty</Material></Target>
+				</Icon>
+				<Link>
+					<Target>
+						<Material>Minecart Empty Gate</Material>
+					</Target>
+					<Text>Minecart Empty Gate</Text>
+				</Link>
+				<Spacer/>
+
+		
+			</Paragraphs>
+		</Page>
+	
+	</Pages>
+</MaterialEntry>

@@ -1,4 +1,4 @@
-﻿namespace Priority_Queue
+namespace Priority_Queue
 {
     public class FastPriorityQueueNode
     {

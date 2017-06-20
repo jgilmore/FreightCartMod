@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCraftData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CraftData>
+		<Key>steveman0.FreightCartStation</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.FreightCartStation</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>TinBar</Key>
+				<Amount>6</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>3</ResearchCost>
+		<Description>Supplies freight network with designated resources from hoppers or mass storage</Description>
+		<Hint>Intelligent resource distribution!</Hint>
+		<ResearchRequirements>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.FreightSystemMonitor</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.FreightSystemMonitor</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>CopperBar</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+			<CraftCost>
+				<Key>TinBar</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>1</ResearchCost>
+		<Description>Displays useful information about your freight network</Description>
+		<Hint>See all the items!</Hint>
+		<ResearchRequirements>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.ScrapCartMK1</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.ScrapCartMK1</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>CopperBar</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+			<CraftCost>
+				<Key>TinBar</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>1</ResearchCost>
+		<Description>Low speed cart with limited capacity</Description>
+		<Hint>Gets items where they're needed... slowly</Hint>
+		<ResearchRequirements>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.ScrapOreFreighterMK1</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.ScrapOreFreighterMK1</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>IronBar</Key>
+				<Amount>4</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>1</ResearchCost>
+		<Description>Low speed cart with for transporting ore</Description>
+		<Hint>Gets items where they're needed... slowly</Hint>
+		<ResearchRequirements>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+		<ScanRequirements>
+			<Scan>IronOre</Scan>
+		</ScanRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.ScrapTrackJunction</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.ScrapTrackJunction</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>steveman0.ScrapTrackStraight</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>1</ResearchCost>
+		<Description>A track piece that allows carts to travel multiple directions at low speeds</Description>
+		<Hint></Hint>
+		<ResearchRequirements>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.ScrapTrackStraight</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.ScrapTrackStraight</CraftedKey>
+		<CraftedAmount>5</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>CopperBar</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>1</ResearchCost>
+		<Description>A simple, low speed straight track piece.</Description>
+		<Hint></Hint>
+		<ResearchRequirements>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.ScrapTrackCorner</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.ScrapTrackCorner</CraftedKey>
+		<CraftedAmount>5</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>CopperBar</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>1</ResearchCost>
+		<Description>A simple, low speed corner track piece.</Description>
+		<Hint></Hint>
+		<ResearchRequirements>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.ScrapTrackSlope</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.ScrapTrackSlope</CraftedKey>
+		<CraftedAmount>5</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>CopperBar</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>1</ResearchCost>
+		<Description>A simple, low speed inclined track piece.</Description>
+		<Hint></Hint>
+		<ResearchRequirements>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.Cornertostraight</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.ScrapTrackStraight</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>steveman0.ScrapTrackCorner</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<Description>Convert Corner to Straight</Description>
+		<Hint>You can do this anywhere!</Hint>
+		<ResearchRequirements>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+		<CanCraftAnywhere>true</CanCraftAnywhere>
+		<MasterRecipe>steveman0.ScrapTrackStraight</MasterRecipe>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.StraighttoSlope</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.ScrapTrackSlope</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>steveman0.ScrapTrackStraight</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<Description>Convert Straight to Slope</Description>
+		<Hint>You can do this anywhere!</Hint>
+		<ResearchRequirements>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+		<CanCraftAnywhere>true</CanCraftAnywhere>
+		<MasterRecipe>steveman0.ScrapTrackSlope</MasterRecipe>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.SlopetoCorner</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.ScrapTrackCorner</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>steveman0.ScrapTrackSlope</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<Description>Convert Slope to Corner</Description>
+		<Hint>You can do this anywhere!</Hint>
+		<ResearchRequirements>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+		<CanCraftAnywhere>true</CanCraftAnywhere>
+		<MasterRecipe>steveman0.ScrapTrackCorner</MasterRecipe>
+	</CraftData>
+	
+	<!--
+	<CraftData>
+		<Key>steveman0.FreightCartMK1</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.FreightCartMK1</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>BasicMinecart</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>5</ResearchCost>
+		<Description>Fast Minecart with 50 Storage Capacity.</Description>
+		<Hint>Functions only with Freight Cart Stations.</Hint>
+		<ResearchRequirements>
+			<Research>minecarts1</Research>
+			<Research>t4_start</Research>  This part previously commented out.  Still need to play test to decide if an upgraded cart is needed and where in the tech tree it should go
+		</ResearchRequirements>
+	</CraftData> -->
+	
+	<CraftData>
+		<Key>steveman0.OreFreighterT1</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.OreFreighterT1</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>BasicMinecart</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+			<CraftCost>
+				<Key>IronPlate</Key>
+				<Amount>15</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>1</ResearchCost>
+		<Description>Freight cart with 250 Ore Capacity.</Description>
+		<Hint>Functions only with Freight Cart Stations.</Hint>
+		<ResearchRequirements>
+			<Research>minecarts1</Research>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.BasicMinecart</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>BasicMinecart</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>steveman0.OreFreighterT1</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<Description>Toss out that extra storage for logistics again!</Description>
+		<Hint>Ideal for upgrading your carts</Hint>
+		<ResearchRequirements>
+			<Research>minecarts1</Research>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+		<MasterRecipe>minecartt1</MasterRecipe>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.OreFreighterT2</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.OreFreighterT2</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>FastMinecart</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+			<CraftCost>
+				<Key>TitaniumPlate</Key>
+				<Amount>15</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>1</ResearchCost>
+		<Description>Fast Freight cart with 250 Ore Capacity.</Description>
+		<Hint>Functions only with Freight Cart Stations.</Hint>
+		<ResearchRequirements>
+			<Research>minecarts2</Research>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.FastMinecart</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>FastMinecart</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>steveman0.OreFreighterT2</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<Description>Toss out that extra storage for logistics again!</Description>
+		<Hint>Ideal for upgrading your carts</Hint>
+		<ResearchRequirements>
+			<Research>minecarts2</Research>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+		<MasterRecipe>minecartt2</MasterRecipe>
+	</CraftData>
+	
+	<CraftData>
+		<Key>minecartt2</Key>
+		<IsOverride>true</IsOverride>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>FastMinecart</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>ForcedInductionMK1</Key>
+				<Amount>4</Amount>
+			</CraftCost>
+			<CraftCost>
+				<Key>BasicMinecart</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>5</ResearchCost>
+		<Description>Fast Minecart with 25 Storage Capacity. Multiple minecarts can run on one track. Build as many as required.</Description>
+		<Hint>These are best when you have hilly terrain.</Hint>
+		<ResearchRequirements>
+			<Research>minecarts2</Research>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.OreFreighterT3</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.OreFreighterT3</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>LargeMinecart</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+			<CraftCost>
+				<Key>LowGradeSteelBar</Key>
+				<Amount>6</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>1</ResearchCost>
+		<Description>Freight cart with 500 Ore Capacity.</Description>
+		<Hint>Functions only with Freight Cart Stations.</Hint>
+		<ResearchRequirements>
+			<Research>minecarts2</Research>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.LargeMinecart</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>LargeMinecart</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>steveman0.OreFreighterT3</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<Description>Toss out that extra storage for logistics again!</Description>
+		<Hint>Ideal for upgrading your carts</Hint>
+		<ResearchRequirements>
+			<Research>minecarts2</Research>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+		<MasterRecipe>minecartt3</MasterRecipe>
+	</CraftData>
+	
+	<CraftData>
+		<Key>minecartt3</Key>
+		<IsOverride>true</IsOverride>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>LargeMinecart</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>StorageHopper</Key>
+				<Amount>4</Amount>
+			</CraftCost>
+			<CraftCost>
+				<Key>IronGear</Key>
+				<Amount>75</Amount>
+			</CraftCost>
+			<CraftCost>
+				<Key>BasicMinecart</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>5</ResearchCost>
+		<Description>Slow Minecart with 50 Storage Capacity. Multiple minecarts can run on one track. Build as many as required.</Description>
+		<Hint>These are best when you have flat terrain.</Hint>
+		<ResearchRequirements>
+			<Research>minecarts2</Research>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.OreFreighterT4</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.OreFreighterT4</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>BulkMinecart</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+			<CraftCost>
+				<Key>ImbuedMachineBlock</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>1</ResearchCost>
+		<Description>Fast Freight cart with 500 Ore Capacity.</Description>
+		<Hint>Functions only with Freight Cart Stations.</Hint>
+		<ResearchRequirements>
+			<Research>minecarts2</Research>
+			<Research>t4_start</Research>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.BulkMinecart</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>BulkMinecart</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>steveman0.OreFreighterT4</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<Description>Toss out that extra storage for logistics again!</Description>
+		<Hint>Make up your mind!</Hint>
+		<ResearchRequirements>
+			<Research>minecarts2</Research>
+			<Research>t4_start</Research>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+		<MasterRecipe>minecartt4</MasterRecipe>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.FreightTourBasic</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.FreightTourBasic</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>FastMinecart</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+			<CraftCost>
+				<Key>RedCanvas</Key>
+				<Amount>10</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>1</ResearchCost>
+		<Description>Travel by way of Tour Cart Stations</Description>
+		<Hint>Functions only with Tour Cart Stations.</Hint>
+		<ResearchRequirements>
+			<Research>minecarts3</Research>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.FreightCartFactory</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.FreightCartFactory</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>TinBar</Key>
+				<Amount>5</Amount>
+			</CraftCost>
+			<CraftCost>
+				<Key>CopperBar</Key>
+				<Amount>3</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>1</ResearchCost>
+		<Description>Used to place Freight Carts onto Tracks from an attached Storage Hopper.</Description>
+		<Hint>Uses standard minecarts</Hint>
+		<ResearchRequirements>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.TourCartStation</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.TourCartStation</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>MinecartDepot</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>1</ResearchCost>
+		<Description>Travel between stations automatically on the freight track network</Description>
+		<Hint>Uses standard tour carts</Hint>
+		<ResearchRequirements>
+			<Research>minecarts3</Research>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.TrackJunction</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.TrackJunctionStandard</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>TrackStraight</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<ResearchCost>1</ResearchCost>
+		<Description>A track piece that allows carts to travel multiple directions.</Description>
+		<Hint></Hint>
+		<ResearchRequirements>
+			<Research>minecarts1</Research>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+	</CraftData>
+	
+	<CraftData>
+		<Key>steveman0.TrackJunctionSelf</Key>
+		<Category>minecarts</Category>
+		<Tier>1</Tier>
+		<CraftedKey>steveman0.TrackJunctionStandard</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>TrackStraight</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+		</Costs>
+		<Description>A track piece that allows carts to travel multiple directions.</Description>
+		<Hint></Hint>
+		<ResearchRequirements>
+			<Research>minecarts1</Research>
+			<Research>steveman0.FreightCarts</Research>
+		</ResearchRequirements>
+		<CanCraftAnywhere>true</CanCraftAnywhere>
+		<MasterRecipe>steveman0.TrackJunction</MasterRecipe>
+	</CraftData>
+	
+</ArrayOfCraftData>
