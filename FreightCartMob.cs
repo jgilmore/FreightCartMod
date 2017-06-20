@@ -19,6 +19,7 @@ public class FreightCartMob : MobEntity
     //private MinecartStation mStation;
     private FreightCartStation FCStation;
     private string NetworkID;
+    private int StationLoaded; // count of items loaded into cart at this particular station.
     public FreightCartMob.eLoadState meLoadState;
     private System.Random rand;
     private static int MineCartID;
@@ -476,15 +477,24 @@ public class FreightCartMob : MobEntity
             this.mBlockOffset = Vector3.zero;
             if ((int)this.FCStation.mValue != FreightStationValue)
                 Debug.LogError(("Attempted to unload into the wrong type of station! (Expected FreightStationValue, got " + this.FCStation.mValue));
-            if ((this.mnUsedStorage == this.mnMaxStorage || this.LoadCheckOut || this.mrLoadTimer > 30.0f) && !(FCStation.mbWaitForFullLoad && this.mnUsedStorage < this.mnMaxStorage))
+			
+            if (((this.mnUsedStorage == this.mnMaxStorage || this.LoadCheckOut || this.mrLoadTimer > 30.0f) &&
+                !(FCStation.mbWaitForFullLoad && this.mnUsedStorage < this.mnMaxStorage)) || this.FullEscape)
             {
-                //if (this.LoadCheckOut)
-                //    FloatingCombatTextManager.instance.QueueText(this.mnX, this.mnY + 2L, this.mnZ, 1f, "LoadCheckOut", Color.red, 1f, 64f);
-                //if (this.mrLoadTimer > 30.0)
-                //    FloatingCombatTextManager.instance.QueueText(this.mnX, this.mnY + 2L, this.mnZ, 1f, "LoadTimer", Color.red, 1f, 64f);
-                //if (this.mnUsedStorage == this.mnMaxStorage)
-                //    FloatingCombatTextManager.instance.QueueText(this.mnX, this.mnY + 2L, this.mnZ, 1f, "MaxStorage", Color.red, 1f, 64f);
+                /*
+                if (this.LoadCheckOut)
+                    FloatingCombatTextManager.instance.QueueText(this.mnX, this.mnY + 2L, this.mnZ, 1f, "LoadCheckOut", Color.blue, 1f, 64f);
+                if (this.mrLoadTimer > 30.0)
+                    FloatingCombatTextManager.instance.QueueText(this.mnX, this.mnY + 2L, this.mnZ, 1f, "LoadTimer", Color.green, 1f, 64f);
+                if (this.mnUsedStorage == this.mnMaxStorage)
+                    FloatingCombatTextManager.instance.QueueText(this.mnX, this.mnY + 2L, this.mnZ, 1f, "MaxStorage", Color.yellow, 1f, 64f);
+                if (this.FullEscape)
+                    FloatingCombatTextManager.instance.QueueText(this.mnX, this.mnY + 2L, this.mnZ, 1f, "FullFreighter", Color.red, 1f, 64f);
+                */
+                if(this.StationLoaded>0)
+                    FloatingCombatTextManager.instance.QueueText(this.mnX, this.mnY + 2L, this.mnZ, 1f, "Loaded:" + this.StationLoaded, Color.green, 1f, 64f);
                 this.LeaveStation();
+                this.FullEscape = false;
             }
             else
             {
@@ -513,6 +523,7 @@ public class FreightCartMob : MobEntity
                                 //this.CurrentNetworkStock.Inventory[item]++;
                                 FreightCartManager.instance.NetworkAdd(this.NetworkID, item, 1);
                                 this.mnUsedStorage++;
+                                this.StationLoaded++;
                                 if (this.IsOreFreighter)
                                     this.OreFreighterItem = item;
                                 this.mrVisualLoadTimer = 1f;
@@ -572,6 +583,7 @@ public class FreightCartMob : MobEntity
 
     private ItemBase GetNextOffer()
     {
+        bool freighterreject = false;
         if (!WorldScript.mbIsServer)
             return null;
         //Start on a random item to help balance input
@@ -591,13 +603,17 @@ public class FreightCartMob : MobEntity
                 if (index >= this.StationOfferings.Count)
                     check -= this.StationOfferings.Count;
                 item = this.StationOfferings[check].Key;
-                if (!this.FreighterAccepted(item))
+                if (!this.FreighterAccepted (item))
+                {
+                    freighterreject = true;
                     continue;
+                }
                 if (FreightCartManager.instance.NetworkNeeds(this.NetworkID, item) > 0)
                     return item.NewInstance().SetAmount(1);
             }
         }
-        this.FullEscape = true;
+        if(freighterreject && this.StationOfferings.Count > 0)
+            this.FullEscape = true;
         return null;
     }
 
@@ -746,6 +762,7 @@ public class FreightCartMob : MobEntity
         this.StationOfferings = null;
         this.CurrentNetworkStock = null;
         this.NetworkID = null;
+        this.StationLoaded = 0;
     }
 
     private void StoreNewTrackPiece()
@@ -995,7 +1012,8 @@ public class FreightCartMob : MobEntity
                     {
                         this.EmptyEscape = false;
                         FreightCartStation Station = this.mUnderSegment.FetchEntity(eSegmentEntity.Mod, this.mnX, this.mnY - 1L, this.mnZ) as FreightCartStation;
-                        if (Station == null)
+
+                        if (Station == null || !this.CheckCartTier(Station.CartTier))
                             this.LeaveStation();
                         else if (Station.mrCartOnUs <= 0.0)
                         {
